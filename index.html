@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gluco Meter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="gluco-meter-container">
+    <h1>Glucometer Interpreter</h1>
+    <div class="result-container">
+      <span class="type-of-test">
+        Fasting Blood Sugar (RBS)
+      </span>
+      <span class="level">Normal</span>
+      <span class="unit">90mg/dL - 5.00mmol/L</span>
+      <span class="message">Healthy blood sugar range. Maintain a balanced diet and hydration.</span>
+    </div>
+    <div class="step1 step active fasting-or-random">
+      <button class="blood-btn fasting-blood-btn">Fasting Blood Sugar (FBS)</button>
+      <button class="blood-btn random-blood-btn">Random Blood Sugar (RBS)</button>
+    </div>
+    <div class="step2 step input-container">
+      <span>Glucose Meter: </span>
+      <input class="glucose-meter-input" placeholder="Enter Your Blood Sugar Meter">
+      <select class="option-unit">
+        <option value="mg/dL">mg/dL</option>
+        <option value="mmol/L">mmol/L</option>
+      </select>
+      <div class="button-container"></div>
+    </div>
+  </div>
+  
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
